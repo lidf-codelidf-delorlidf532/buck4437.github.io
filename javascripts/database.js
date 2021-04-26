@@ -1,6 +1,6 @@
 const DATA = [
     {
-        name: "Main Project",
+        name: "Main Projects",
         projects: [
             {
                 name: "Oscillight",
@@ -24,7 +24,7 @@ const DATA = [
         ]
     },
     {
-        name: "Old Project",
+        name: "Old Projects",
         projects: [
             {
                 name: "Spatial Layering",
