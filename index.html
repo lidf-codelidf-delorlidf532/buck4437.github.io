@@ -3,10 +3,41 @@
     <head>
         <meta charset="utf-8">
         <title>Buck's stuff</title>
+        <link rel="stylesheet" href="stylesheets/core.css">
+        <link rel="stylesheet" href="stylesheets/colors.css">
+        <link rel="stylesheet" href="stylesheets/styles.css">
+        <script src="javascripts/libraries/vue.js"></script>
     </head>
     <body>
-        Hello world!
+        <div id="app">
+            <header>
+                Buck's stuff
+            </header>
+            <main>
+                <div class="cat" v-for="cat in DATA" :key="cat.name">
+                    <span class="cat-name">{{cat.name}}</span>
+                    <div class="proj-list">
+                        <div class="proj" v-for="proj in cat.projects" :key="proj.name">
+                            <div class="text-con">
+                                <div class="proj-name">{{proj.name}}</div>
+                                <div v-if="proj.desc" class="pre-formatted proj-desc">{{proj.desc}}</div>
+                            </div>
+                            <div class="proj-btn-con">
+                                <a class="proj-btn" v-if="typeof proj.src === 'string'"
+                                   :href="proj.src" target="_blank">
+                                    Github
+                                </a>
+                                <a class="proj-btn" v-else v-for="link in proj.src"
+                                   :href="link.src" target="_blank">
+                                    {{link.name}}
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
     </body>
-    <style>
-    </style>
+    <script src="javascripts/database.js"></script>
+    <script src="javascripts/index.js"></script>
 </html>

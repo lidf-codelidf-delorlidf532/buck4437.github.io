@@ -1,0 +1,114 @@
+body {
+    background-color: var(--background);
+    color: var(--color);
+}
+
+header {
+    font-size: 30px;
+    padding: 8px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cat {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.cat-name {
+    font-size: 24px;
+    padding: 16px 0;
+}
+
+.proj-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.proj {
+    display: flex;
+    flex-direction: row;
+    min-height: 120px;
+    justify-content: space-between;
+    border: 2px solid var(--color);
+    margin-bottom: 20px;
+    transition-duration: 0s;
+}
+
+.text-con {
+    margin: 16px;
+}
+
+.proj-name {
+    font-size: 20px;
+    margin: 8px 8px 16px;
+}
+
+.proj-desc {
+    line-height: 1.6;
+    margin: 8px;
+    font-style: italic;
+}
+
+.proj-btn-con {
+    margin: 16px;
+    min-width: 192px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.proj-btn {
+	margin: 8px;
+	min-width: 160px;
+	min-height: 48px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+    text-decoration: none;
+    background-color: var(--background);
+    color: var(--color);
+    border: 2px solid var(--color);
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+
+    /* files */
+
+    .proj-list {
+        min-width: 288px;
+    }
+
+    .proj-con {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .proj-btn-con {
+        flex-wrap: wrap;
+    }
+
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+    .proj-btn-con {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .proj-btn {
+        flex-grow: 1;
+    }
+
+}
