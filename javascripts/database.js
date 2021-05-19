@@ -4,7 +4,7 @@ const DATA = [
         projects: [
             {
                 name: "Oscillight",
-                desc: "A game about generating lights. Made for IGJ 2021.",
+                desc: "A game about generating lights. Made for Incremental Game Jam 2021.",
                 src: [
                     {
                         name: "Github",
