@@ -58,14 +58,14 @@ const DATA = [
             },
         ]
     },
-    // {
-    //     name: "Misc",
-    //     projects: [
-    //         {
-    //             name: "Puzzles",
-    //             desc: "This is where I'll dump all my puzzle ideas",
-    //             src: "puzzles/index.html"
-    //         }
-    //     ]
-    // }
+     {
+         name: "Misc",
+         projects: [
+             {
+                 name: "Puzzles",
+                 desc: "This is where I'll dump all my puzzle ideas",
+                 src: "puzzles/index.html"
+             }
+       ]
+     }
 ];
